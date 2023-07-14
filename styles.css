@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #1c1c1c;
+    font-family: 'Inter', sans-serif;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;    
+    margin: 10px auto;
+    padding: 10px 0px;
+    background: #fffdfe;
+    width: 90vw;
+    max-width: 800px;
+    height: auto;
+    border-radius: 15px;
+}
+
+select {
+    width: 50vw;  
+    font-family: 'Inter', sans-serif; 
+}
+
+select, .btn {
+    padding: 10px;
+    border: 1px solid #D1D5DB;
+    border-radius: 10px;
+    color: #374151;
+}
+
+input[type=color] {
+    border: none;
+    height: 35px;
+}
+
+#color-tools {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+    box-shadow: 0px 6px 8px rgba(0,0,0,0.15); 
+    padding: 20px;
+}
