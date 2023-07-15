@@ -1,5 +1,14 @@
 const colorScheme = document.getElementById("color-scheme")
-const colorSelected = document.getElementById("color-selected")
+let colorSelected = document.getElementById("color-selected")
+
+
+
+function monochrome() {
+    
+}
+
+monochrome()
+
 
 fetch("https://www.thecolorapi.com/scheme?hex=245657&mode=monochrome&count=6") 
  .then(res => res.json())
@@ -14,6 +23,7 @@ fetch("https://www.thecolorapi.com/scheme?hex=245657&mode=monochrome&count=6")
         html += `
         <div class="color-list" id="colors-displayed" style="background:${colorInfo.hex.value}"></div>
         <div id="color-hex-values">${colorInfo.hex.value}</div>
+        <div id="color-name-values">${colorInfo.name.value}</div>
         `
     }
     

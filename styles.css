@@ -66,3 +66,8 @@ input[type=color] {
     grid-area: hex 2;    
     justify-self: center; 
 }
+
+#color-name-values {
+    grid-area: name 3;    
+    justify-self: center; 
+}
