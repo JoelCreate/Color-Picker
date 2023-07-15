@@ -3,7 +3,7 @@ const getColorSchemeBtn = document.getElementById("get-color-scheme")
 const selectScheme = document.getElementById("select-scheme")
 
 
-fetch(`https://www.thecolorapi.com/scheme?hex=000000&mode=monochrome`) 
+fetch(`https://www.thecolorapi.com/scheme?hex=000000&mode=monochrome&count=3`) 
     .then(res => res.json())
     .then(data => {
 
@@ -14,8 +14,8 @@ fetch(`https://www.thecolorapi.com/scheme?hex=000000&mode=monochrome`)
         for (let colorInfo of colorArr) {
             html += `
             <div class="color-list" id="colors-displayed" style="background:${colorInfo.hex.value}"></div>
-            <!--<div id="color-hex-values">${colorInfo.hex.value}</div>-->
             <div id="color-name-values">${colorInfo.name.value}</div>
+            <div id="color-hex-values">${colorInfo.hex.value}</div>
             `
         }
         
@@ -31,7 +31,7 @@ getColorSchemeBtn.addEventListener("click", function(){
     const queryString = 'hex=' + encodeURIComponent(selectedColor)    
     const selectedColorScheme = selectScheme.value.toLowerCase()    
 
-    fetch(`https://www.thecolorapi.com/scheme?${queryString}&mode=${selectedColorScheme}`) 
+    fetch(`https://www.thecolorapi.com/scheme?${queryString}&mode=${selectedColorScheme}&count=3`) 
         .then(res => res.json())
         .then(data => {
 
@@ -42,8 +42,8 @@ getColorSchemeBtn.addEventListener("click", function(){
             for (let colorInfo of colorArr) {
                 html += `
                 <div class="color-list" id="colors-displayed" style="background:${colorInfo.hex.value}"></div>
-                <!--<div id="color-hex-values">${colorInfo.hex.value}</div>-->
                 <div id="color-name-values">${colorInfo.name.value}</div>
+                <div id="color-hex-values">${colorInfo.hex.value}</div>
                 `
             }
             
