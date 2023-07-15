@@ -58,6 +58,7 @@ select:focus {
 input[type=color] {
     border: none;
     height: 35px;
+    width: 55px;
     -webkit-appearance: none;
 }
 
