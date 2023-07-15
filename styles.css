@@ -49,6 +49,11 @@ input[type=color] {
     padding: 20px;
 }
 
+#get-color-scheme:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
 #color-scheme {
     display: grid;    
 }
