@@ -123,6 +123,7 @@ input[type=color] {
     select, .btn {
         padding: 15px 10px;
         width: 100%;
+        text-align: center !important;
     }
 
     input[type=color] {
@@ -133,7 +134,7 @@ input[type=color] {
     }
 
     .color-list { 
-        height: 200px;
+        height: 225px;
     }
 
   }
