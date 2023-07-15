@@ -48,6 +48,7 @@ select, .btn {
     border: 1px solid #D1D5DB;
     border-radius: 10px;
     color: #374151;
+    background: transparent;
     -webkit-appearance: none;
 }
 
@@ -114,6 +115,7 @@ input[type=color] {
     }
     
     select, .btn {
+        padding: 15px 10px;
         width: 100%;
     }
   }
