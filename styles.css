@@ -116,6 +116,7 @@ input[type=color] {
         font-family: 'Poppins', sans-serif;
         letter-spacing: 0px;
         margin: 0px auto;
+        font-size: .5em;
     }
     
     select, .btn {
