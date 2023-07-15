@@ -56,7 +56,7 @@ select:focus {
 }
 
 input[type=color] {
-    border: none;
+    border: 1px solid #acacac;
     border-radius: none;
     height: 35px;
     width: 55px;
