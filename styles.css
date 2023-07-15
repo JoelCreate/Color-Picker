@@ -41,6 +41,8 @@ p {
 select {
     width: 50%;  
     font-family: 'Inter', sans-serif; 
+    text-align: center;
+    font-size: 1em;
 }
 
 select, .btn {
@@ -111,6 +113,8 @@ input[type=color] {
 @media screen and (max-width: 400px) {
     
     h1 {
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 0px;
         margin: 0px auto;
     }
     
